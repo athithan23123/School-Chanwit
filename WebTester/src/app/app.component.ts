@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'WebTester';
+
+  constructor(private router: Router) {}
+
+  nextpage(){
+    this.router.navigateByUrl('infome');
+}
 }
