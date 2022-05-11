@@ -8,10 +8,11 @@ import {RouterModule, Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'WebTester';
+  panelOpenState = false;
 
-  constructor(private router: Router) {}
+  // constructor(private router: Router) {}
 
-  nextpage(){
-    this.router.navigateByUrl('infome');
-}
+//   nextpage(){
+//     this.router.navigateByUrl('infome');
+// }
 }
