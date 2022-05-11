@@ -1,4 +1,4 @@
-<mat-card style="font-size: large; background-color: rgb(64, 141, 230);font-family: 'Kanit'; width: auto;">
+<mat-card style="font-size: large; background-color: rgb(64, 141, 230);font-family: 'Kanit'; width: auto; color: rgb(255, 255, 255);">
   
   แกลเลอรี่ของเรา
 
@@ -24,12 +24,12 @@
 
 
 
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" style="background: rgb(51, 51, 51); ">
       <mat-expansion-panel-header>
-        <mat-panel-title>
+        <mat-panel-title style="font-family: 'Kanit'; color: white;" >
           ความสมบูรณ์ของเรา
         </mat-panel-title>
-        <mat-panel-description>
+        <mat-panel-description style="font-family: 'Kanit'; color: white;">
           {{panelOpenState ? 'Process 30%' : ''}}
         </mat-panel-description>
       </mat-expansion-panel-header>
